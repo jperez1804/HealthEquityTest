@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "HealthEquity.Test.FunctionApp.Main": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7067",
+      "launchBrowser": false
+    }
+  }
+}
