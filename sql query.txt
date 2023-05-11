@@ -1,0 +1,20 @@
+
+
+SELECT * 
+FROM OrdersDetails od
+JOIN Orders o ON od.OrderID = o.OrderID AND o.PersonID = 
+
+
+SELECT 
+	c.FirstName + ' ' + c.LastName As 'Full Name',
+	c.Age,
+	o.OrderID,
+	o.DateCreated,
+	o.MethodofPurchase as 'Purchase Method',
+	od.ProductNumber,
+	od.ProductOrigin				
+FROM Customer c
+JOIN Orders o ON o.PersonID = c.PersonID
+JOIN OrdersDetails od ON od.OrderID = o.OrderID
+WHERE c.ProductID = 111222333
+
